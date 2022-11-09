@@ -1,0 +1,80 @@
+:root {
+    --bg-main: #ffffff;
+    --bg-light-blue: #9DD9D2;
+    --bg-orange-dark:#FF8811;
+    --bg-orange-light: #F4D06F;
+    --bg-green: #0FFF8F;
+    --bg-green-light: #78FFAC;
+    --dark-blue: #211b33;
+    --text-white: #ffffff;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    //prevents funky padding stretch
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: auto;
+    overflow-y: scroll;
+    min-height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(71,255,92);
+    background: linear-gradient(90deg, rgba(71,255,92,1) 0%, rgba(248,255,61,1) 55%, rgba(252,164,69,1) 100%);
+    color: var(--text-white);
+    h1{
+        color: var(--text-white);
+        a,:link, :visited, :hover, :active{
+            color: var(--text-white);
+            text-decoration: none;
+        }
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(99, 99, 99, 0.23);
+        border-radius: 10px;
+        li{
+            list-style: none;
+            padding: 1em;
+            a{
+                color: var(--text-white);
+                text-decoration: none;
+                //no default looks
+                :link, :visited, :hover, :active{
+                    text-decoration: none;
+                }
+                #active-page{
+                    border-bottom-color: var(--text-white);
+                    border-bottom-style: solid;
+                }
+            }
+            
+        }
+    }
+  }
+  section.intro-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+  }
+  
+  
