@@ -1,5 +1,7 @@
 :root {
     --bg-main: #ffffff;
+    --bg-dark: #2f3948;
+    
     --bg-light-blue: #9DD9D2;
     --bg-orange-dark:#FF8811;
     --bg-orange-light: #F4D06F;
@@ -8,6 +10,9 @@
     --dark-blue: #211b33;
     --shadow-grey: #666666;
     --text-white: #ffffff;
+
+
+    --container-shadow: 2px 2px 6px var(--shadow-grey);
   }
   
   *{
@@ -22,6 +27,9 @@
     overflow-y: scroll;
     min-height: 100vh;
     font-family: "Ubuntu", sans-serif;
+    background-color: var(--bg-dark);
+    background-image: url(/imgs/icons/star-blue.png );
+
   }
   
   header{
@@ -36,6 +44,8 @@
     background: rgb(71,255,92);
     background: linear-gradient(90deg, var(--bg-green) 0%, rgba(248,255,61,1) 55%, var(--bg-orange-dark) 100%);
     color: var(--text-white);
+
+    box-shadow: var(--container-shadow);
     h1{
         color: var(--text-white);
         a,:link, :visited, :hover, :active{
@@ -48,7 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(99, 99, 99, 0.23);
+        //background-color: rgba(99, 99, 99, 0.23);
         border-radius: 10px;
         li{
             list-style: none;
@@ -83,22 +93,37 @@
     //width: 100%; //overflowsss
     margin: 1em;
     padding: 1em;
-    display: grid;
-    justify-items: center;
+    display:flexbox;
+    justify-content: center;
+    align-items: center ;
+    
     .soundscape-container,.varg-container, .twine-container{
         margin: 1.2em 1em;
         padding: 1em;
         grid-column: auto;
         grid-row: auto;
-        
         //border-style: dashed;
         border-radius: 12px;
         box-shadow: 2px 2px 6px var(--shadow-grey);
+        background-color: var(--bg-main);
+
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin-bottom: 1em;
+        }
     }
     .varg-container{
         background-color: var(--bg-green);
         img{
             width: 200px;
+        }
+    }
+    .soundscape-container{
+        img{
+            width: 600px;
+            box-shadow: var(--container-shadow);
         }
     }
   }
