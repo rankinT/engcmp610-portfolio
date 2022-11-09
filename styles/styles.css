@@ -1,0 +1,92 @@
+:root {
+  --bg-main: #ffffff;
+  --bg-light-blue: #9DD9D2;
+  --bg-orange-dark:#FF8811;
+  --bg-orange-light: #F4D06F;
+  --bg-green: #0FFF8F;
+  --bg-green-light: #78FFAC;
+  --dark-blue: #211b33;
+}
+
+* {
+  color: var(--dark-blue);
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--bg-main);
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+#top-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#top-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#top-accent-rev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  height: 3em;
+}
+
+#self-image {
+  top: 20%;
+  right: 10%;
+  height: 12em;
+  border: dashed;
+}
+
+html {
+  height: 100%;
+}
+
+.intro-container {
+  display: flex;
+  padding: 10;
+}
+
+.intro-content {
+  display: block;
+  margin-left: 10%;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 1%;
+  padding-right: 5%;
+  right: 6%;
+  top: 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0.7rem;
+}/*# sourceMappingURL=styles.css.map */
