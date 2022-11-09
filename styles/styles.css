@@ -41,6 +41,10 @@ header {
   color: var(--text-white);
   box-shadow: var(--container-shadow);
 }
+header #active-page {
+  border-bottom-color: var(--text-white);
+  border-bottom-style: solid;
+}
 header h1 {
   color: var(--text-white);
 }
@@ -65,10 +69,6 @@ header ul li a {
 header ul li a :link, header ul li a :visited, header ul li a :hover, header ul li a :active {
   text-decoration: none;
 }
-header ul li a #active-page {
-  border-bottom-color: var(--text-white);
-  border-bottom-style: solid;
-}
 
 section.intro-container {
   visibility: hidden;
@@ -77,18 +77,17 @@ section.intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2em 0;
 }
 
 section.portfolio-container {
   margin: 1em;
   padding: 1em;
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 section.portfolio-container .soundscape-container, section.portfolio-container .varg-container, section.portfolio-container .twine-container {
-  margin: 1.2em 1em;
+  margin: 2em;
   padding: 1em;
   display: block;
   border-radius: 12px;

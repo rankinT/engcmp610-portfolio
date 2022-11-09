@@ -46,6 +46,11 @@
     color: var(--text-white);
 
     box-shadow: var(--container-shadow);
+
+    #active-page{
+        border-bottom-color: var(--text-white);
+        border-bottom-style: solid;
+    }
     h1{
         color: var(--text-white);
         a,:link, :visited, :hover, :active{
@@ -70,10 +75,6 @@
                 :link, :visited, :hover, :active{
                     text-decoration: none;
                 }
-                #active-page{
-                    border-bottom-color: var(--text-white);
-                    border-bottom-style: solid;
-                }
             }
             
         }
@@ -86,19 +87,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em 0;
+    //padding: 2em 0;
     
   }
   section.portfolio-container{
     //width: 100%; //overflowsss
     margin: 1em;
     padding: 1em;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center ;
     
     .soundscape-container,.varg-container, .twine-container{
-        margin: 1.2em 1em;
+        margin: 2em;
         padding: 1em;
         display: block;
         //border-style: dashed;
@@ -109,7 +110,6 @@
         justify-content: center;
         align-items: center;
         
-
         p{
             margin-bottom: 1em;
         }
