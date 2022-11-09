@@ -93,15 +93,14 @@
     //width: 100%; //overflowsss
     margin: 1em;
     padding: 1em;
-    display:flexbox;
+    display: block;
     justify-content: center;
     align-items: center ;
     
     .soundscape-container,.varg-container, .twine-container{
         margin: 1.2em 1em;
         padding: 1em;
-        grid-column: auto;
-        grid-row: auto;
+        display: block;
         //border-style: dashed;
         border-radius: 12px;
         box-shadow: 2px 2px 6px var(--shadow-grey);
@@ -109,6 +108,7 @@
 
         justify-content: center;
         align-items: center;
+        
 
         p{
             margin-bottom: 1em;
@@ -117,7 +117,7 @@
     .varg-container{
         background-color: var(--bg-green);
         img{
-            width: 200px;
+            width: 300px;
         }
     }
     .soundscape-container{

@@ -83,15 +83,14 @@ section.intro-container {
 section.portfolio-container {
   margin: 1em;
   padding: 1em;
-  display: flexbox;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 section.portfolio-container .soundscape-container, section.portfolio-container .varg-container, section.portfolio-container .twine-container {
   margin: 1.2em 1em;
   padding: 1em;
-  grid-column: auto;
-  grid-row: auto;
+  display: block;
   border-radius: 12px;
   box-shadow: 2px 2px 6px var(--shadow-grey);
   background-color: var(--bg-main);
@@ -105,7 +104,7 @@ section.portfolio-container .varg-container {
   background-color: var(--bg-green);
 }
 section.portfolio-container .varg-container img {
-  width: 200px;
+  width: 300px;
 }
 section.portfolio-container .soundscape-container img {
   width: 600px;
