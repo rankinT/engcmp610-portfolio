@@ -9,6 +9,7 @@
   --dark-blue: #211b33;
   --shadow-grey: #666666;
   --text-white: #ffffff;
+  --custom-green: #89ffc8;
   --container-shadow: 2px 2px 6px var(--shadow-grey);
 }
 
@@ -85,8 +86,9 @@ section.portfolio-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-section.portfolio-container .soundscape-container, section.portfolio-container .varg-container, section.portfolio-container .twine-container {
+section.portfolio-container .soundscape-container, section.portfolio-container .varg-container, section.portfolio-container .twine-container, section.portfolio-container .portfolio-container {
   margin: 2em;
   padding: 1em;
   display: block;
@@ -96,16 +98,25 @@ section.portfolio-container .soundscape-container, section.portfolio-container .
   justify-content: center;
   align-items: center;
 }
-section.portfolio-container .soundscape-container p, section.portfolio-container .varg-container p, section.portfolio-container .twine-container p {
+section.portfolio-container .soundscape-container p, section.portfolio-container .varg-container p, section.portfolio-container .twine-container p, section.portfolio-container .portfolio-container p {
   margin-bottom: 1em;
 }
 section.portfolio-container .varg-container {
-  background-color: var(--bg-green);
+  background-color: var(--bg-green-light);
 }
 section.portfolio-container .varg-container img {
   width: 300px;
+  box-shadow: var(--container-shadow);
 }
 section.portfolio-container .soundscape-container img {
   width: 600px;
+  box-shadow: var(--container-shadow);
+}
+section.portfolio-container .portfolio-container {
+  background-color: var(--bg-green-light);
+}
+section.portfolio-container .portfolio-container img {
+  width: 400px;
+  margin: 0 1em;
   box-shadow: var(--container-shadow);
 }/*# sourceMappingURL=styles.css.map */
