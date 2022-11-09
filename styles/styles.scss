@@ -44,8 +44,18 @@
     background: rgb(71,255,92);
     background: linear-gradient(90deg, var(--bg-green) 0%, rgba(248,255,61,1) 55%, var(--bg-orange-dark) 100%);
     color: var(--text-white);
-
     box-shadow: var(--container-shadow);
+
+    .underline{
+        position: absolute;
+        top: 58px;
+        height: 3px;
+        width: 100px;
+        background-color: red;
+        :hover{
+            transform: translateX(50px, 0);
+        }
+    }
 
     #active-page{
         border-bottom-color: var(--text-white);
@@ -80,6 +90,10 @@
         }
     }
   }
+
+////////// HOME /////////////
+
+///////// PORTFOLIO ///////////
   section.intro-container{
     visibility: hidden;
     position: relative;

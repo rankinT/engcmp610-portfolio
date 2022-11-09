@@ -42,6 +42,16 @@ header {
   color: var(--text-white);
   box-shadow: var(--container-shadow);
 }
+header .underline {
+  position: absolute;
+  top: 58px;
+  height: 3px;
+  width: 100px;
+  background-color: red;
+}
+header .underline :hover {
+  transform: translateX(50px, 0);
+}
 header #active-page {
   border-bottom-color: var(--text-white);
   border-bottom-style: solid;
