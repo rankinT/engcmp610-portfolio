@@ -10,7 +10,9 @@
     --bg-green-light: #78FFAC;
     --dark-blue: #211b33;
     --shadow-grey: #666666;
+
     --text-white: #ffffff;
+    --text-dark: #080606;
 
     --custom-green: #89ffc8;
     --container-shadow: 2px 2px 6px var(--shadow-grey);
@@ -27,9 +29,10 @@
     overflow-x: auto;
     overflow-y: scroll;
     min-height: 100vh;
-    font-family: "Ubuntu", sans-serif;
-    background-color: var(--bg-dark-alt);
-    color: var(--text-white);
+    //font-family: "Ubuntu", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
     //background-image: url(/imgs/icons/star-blue.png );
 
   }
@@ -39,9 +42,10 @@
     top: 0;
     left: 0;
     display: flex;
-    justify-content:center;
+    justify-content:right;
     align-items: center;
-    padding: 0 0 3rem 0;
+    margin: 0 0 3rem 0;
+    //background-color: rgba($color: #fdc4c4, $alpha: 1.0);
 
    .top-color{
     width: 100%;
@@ -54,18 +58,16 @@
     background: linear-gradient(90deg, var(--bg-green) 0%, rgba(248,255,61,1) 55%, var(--bg-orange-dark) 100%);
     box-shadow: var(--container-shadow);
    }
+   
 
     #active-page{
-        border-bottom-color: var(--text-white);
         border-bottom-style: solid;
+        border-color: rgba($color: #0205be, $alpha: 1.0);
+        background-color: rgba($color: #0FFF8F, $alpha: 0.35);
+        padding: .6em;
+        border-radius: 10px;
     }
-    h1{
-        color: var(--text-white);
-        a,:link, :visited, :hover, :active{
-            color: var(--text-white);
-            text-decoration: none;
-        }
-    }
+
 
     ul{
         padding: 1rem;
@@ -78,7 +80,7 @@
             list-style: none;
             padding: 1em;
             a{
-                color: var(--text-white);
+                color: var(--text-dark);
                 text-decoration: none;
                 //no default looks
                 :link, :visited, :hover, :active{

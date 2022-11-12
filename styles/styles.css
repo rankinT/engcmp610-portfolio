@@ -10,6 +10,7 @@
   --dark-blue: #211b33;
   --shadow-grey: #666666;
   --text-white: #ffffff;
+  --text-dark: #080606;
   --custom-green: #89ffc8;
   --container-shadow: 2px 2px 6px var(--shadow-grey);
 }
@@ -24,9 +25,9 @@ body {
   overflow-x: auto;
   overflow-y: scroll;
   min-height: 100vh;
-  font-family: "Ubuntu", sans-serif;
-  background-color: var(--bg-dark-alt);
-  color: var(--text-white);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
 }
 
 header {
@@ -34,9 +35,9 @@ header {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  padding: 0 0 3rem 0;
+  margin: 0 0 3rem 0;
 }
 header .top-color {
   width: 100%;
@@ -49,15 +50,11 @@ header .top-color {
   box-shadow: var(--container-shadow);
 }
 header #active-page {
-  border-bottom-color: var(--text-white);
   border-bottom-style: solid;
-}
-header h1 {
-  color: var(--text-white);
-}
-header h1 a, header h1 :link, header h1 :visited, header h1 :hover, header h1 :active {
-  color: var(--text-white);
-  text-decoration: none;
+  border-color: #0205be;
+  background-color: rgba(15, 255, 143, 0.35);
+  padding: 0.6em;
+  border-radius: 10px;
 }
 header ul {
   padding: 1rem;
@@ -71,7 +68,7 @@ header ul li {
   padding: 1em;
 }
 header ul li a {
-  color: var(--text-white);
+  color: var(--text-dark);
   text-decoration: none;
 }
 header ul li a :link, header ul li a :visited, header ul li a :hover, header ul li a :active {
