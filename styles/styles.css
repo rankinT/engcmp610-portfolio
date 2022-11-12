@@ -90,6 +90,7 @@ section.intro-container .img-content {
 }
 section.intro-container .img-content img {
   width: 300px;
+  padding: 1em;
 }
 
 section.portfolio-container {
