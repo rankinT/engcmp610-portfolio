@@ -1,6 +1,7 @@
 :root {
   --bg-main: #ffffff;
-  --bg-dark: #2f3948;
+  --bg-dark: #31363d;
+  --bg-dark-alt: #21262c;
   --bg-light-blue: #9DD9D2;
   --bg-orange-dark:#FF8811;
   --bg-orange-light: #F4D06F;
@@ -24,22 +25,27 @@ body {
   overflow-y: scroll;
   min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
-  background-color: var(--bg-dark);
-  background-image: url(/imgs/icons/star-blue.png);
+  background-color: var(--bg-dark-alt);
+  color: var(--text-white);
 }
 
 header {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0 0 3rem 0;
+}
+header .top-color {
+  width: 100%;
+  height: 3px;
+  position: fixed;
+  margin: 0;
+  top: 0;
   background: rgb(71, 255, 92);
   background: linear-gradient(90deg, var(--bg-green) 0%, rgb(248, 255, 61) 55%, var(--bg-orange-dark) 100%);
-  color: var(--text-white);
   box-shadow: var(--container-shadow);
 }
 header #active-page {
@@ -54,6 +60,7 @@ header h1 a, header h1 :link, header h1 :visited, header h1 :hover, header h1 :a
   text-decoration: none;
 }
 header ul {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,12 +79,17 @@ header ul li a :link, header ul li a :visited, header ul li a :hover, header ul 
 }
 
 section.intro-container {
-  visibility: hidden;
-  position: relative;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section.intro-container .img-content {
+  justify-content: center;
+  align-items: center;
+  padding: 1.3em;
+}
+section.intro-container .img-content img {
+  width: 300px;
 }
 
 section.portfolio-container {

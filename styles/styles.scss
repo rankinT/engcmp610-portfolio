@@ -1,6 +1,7 @@
 :root {
     --bg-main: #ffffff;
-    --bg-dark: #2f3948;
+    --bg-dark: #31363d;
+    --bg-dark-alt: #21262c;
     
     --bg-light-blue: #9DD9D2;
     --bg-orange-dark:#FF8811;
@@ -27,25 +28,32 @@
     overflow-y: scroll;
     min-height: 100vh;
     font-family: "Ubuntu", sans-serif;
-    background-color: var(--bg-dark);
-    background-image: url(/imgs/icons/star-blue.png );
+    background-color: var(--bg-dark-alt);
+    color: var(--text-white);
+    //background-image: url(/imgs/icons/star-blue.png );
 
   }
   
   header{
     width: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
-    padding: 1rem;
+    padding: 0 0 3rem 0;
+
+   .top-color{
+    width: 100%;
+    height: 3px;
+    //position: absolute;
+    position: fixed;
+    margin: 0;
+    top: 0;
     background: rgb(71,255,92);
     background: linear-gradient(90deg, var(--bg-green) 0%, rgba(248,255,61,1) 55%, var(--bg-orange-dark) 100%);
-    color: var(--text-white);
-
     box-shadow: var(--container-shadow);
+   }
 
     #active-page{
         border-bottom-color: var(--text-white);
@@ -60,6 +68,7 @@
     }
 
     ul{
+        padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,15 +89,20 @@
         }
     }
   }
+
+  
   section.intro-container{
-    visibility: hidden;
-    position: relative;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    //padding: 2em 0;
-    
+    .img-content{
+        justify-content: center;
+        align-items: center;
+        padding: 1.3em;
+        img{
+            width: 300px;
+        }
+    }
   }
   section.portfolio-container{
     //width: 100%; //overflowsss
