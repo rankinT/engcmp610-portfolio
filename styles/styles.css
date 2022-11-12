@@ -51,8 +51,8 @@ header .top-color {
 }
 header #active-page {
   border-bottom-style: solid;
-  border-color: #0205be;
-  background-color: rgba(15, 255, 143, 0.35);
+  border-color: #be7c02;
+  background-color: rgba(255, 179, 15, 0.35);
   padding: 0.6em;
   border-radius: 10px;
 }
