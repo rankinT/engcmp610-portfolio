@@ -252,14 +252,14 @@
     @keyframes scrollDown {
         from {
             opacity: 0;
-            transform: translatex(-50px) scaleX(0.1);
+            transform: translatex(-20px) scaleX(0.1);
         }
         50%{
             opacity: 1;
         }
         to{
             opacity: 0;
-            transform: translatex(50px) scaleX(2); //multi right to left
+            transform: translatex(50px) scaleX(1); //multi right to left
             
         }
     }
