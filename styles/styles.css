@@ -146,10 +146,9 @@ section.portfolio-container {
   margin: 1em;
   padding: 1em;
   display: flex;
-  float: left;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 section.portfolio-container .portfolio-item-container {
   background-color: #ececec;
@@ -161,6 +160,29 @@ section.portfolio-container .portfolio-item-container {
 section.portfolio-container .portfolio-item-container img {
   width: 500px;
 }
-section.portfolio-container .portfolio-item-container.website img {
-  width: 250px;
+section.portfolio-container .portfolio-item-container p {
+  margin-bottom: 1em;
+}
+
+.portfolio-item-container.twine {
+  text-align: center;
+}
+.portfolio-item-container.twine a {
+  margin: 1em 0;
+}
+
+.portfolio-item-container.website img {
+  width: 400px;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

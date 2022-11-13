@@ -180,28 +180,51 @@
     margin: 1em;
     padding: 1em;
     display: flex;
-    float: left;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
-    flex-direction: column;
 
-    .portfolio-item-container{
-        img{
-            width: 500px;
-        }
+    .portfolio-item-container{         
         background-color: rgba($color: #ececec3a, $alpha: 1);
         padding: 1.2em;
         margin: 1.2em;
         border-radius: 20px;
         box-shadow: var(--container-shadow);
-    }
-
-    .portfolio-item-container.website{
         img{
-            width: 250px;
+            width: 500px;
         }
+        p{
+            margin-bottom:1em ;
+        }
+        
     }
   }
+  
+  .portfolio-item-container.twine{
+    text-align: center;
+    a{
+        margin: 1em 0;
+    }
+}
+
+.portfolio-item-container.website{
+    img{
+        width: 400px;
+    }
+}
+// animations
+// https://alvarotrigo.com/blog/css-animations-scroll/
+.reveal{
+    position:relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+///a
 
 
   
