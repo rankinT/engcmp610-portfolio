@@ -233,19 +233,15 @@ section.about-intro{
     }
   }
   .about-container{
-    display:flex;
-    flex-direction: column;
-    text-align: left;
-    
+    margin: 1em;
     margin: 0;
     padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // background-color: #0FFF8F;
     background-color: #f5f7f8;
-    h2{
-        padding: 1em 0;
-    } 
   }
-
 
   section.about-intro.edu{
     display: flex;
@@ -256,9 +252,26 @@ section.about-intro{
     background-color: #d3ffee;
     // color: #0832bb;
     padding: 2em 0;
-    text-align: center;
-    h1{
-        font-size: 28px;
+  }
+  .about-container.edu{
+    table{
+        margin: 2em;
     }
   }
 
+  section.about-intro.exp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;    
+    //background-color: #dfffd3;
+    background-color: #f2ffd3;
+    // color: #0832bb;
+    padding: 2em 0;
+}
+
+.about-container.exp{
+    table{
+        margin: 2em;
+    }
+}

@@ -61,12 +61,25 @@
   }
 }
 
+#scroll-link {
+  text-decoration: none;
+  color: black;
+  transition: background-color 1s;
+}
+#scroll-link :hover {
+  background-color: rgb(255, 227, 175);
+}
+
 #scroll-prompt {
   z-index: 1;
   position: fixed;
   bottom: 10%;
   left: 0;
   rotate: 90deg;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 6px #666666;
+  border-top-right-radius: 30px;
+  padding: 0.5em;
 }
 #scroll-prompt p {
   font-weight: bold;
@@ -77,37 +90,38 @@
   display: none;
 }
 #scroll-prompt .line {
+  bottom: 10px;
   background-color: black;
   width: 50px;
   height: 3px;
   position: absolute;
-  -webkit-animation: 3s linear infinite running scrollDown;
-          animation: 3s linear infinite running scrollDown;
+  -webkit-animation: 4s linear infinite running scrollDown;
+          animation: 4s linear infinite running scrollDown;
 }
 @-webkit-keyframes scrollDown {
-  from {
+  0% {
     opacity: 0;
-    transform: translatex(-20px) scaleX(0.1);
+    transform: translatex(-20px) scaleX(0.3);
   }
   50% {
-    opacity: 1;
+    opacity: 0.7;
   }
-  to {
+  100% {
     opacity: 0;
-    transform: translatex(50px) scaleX(1);
+    transform: translatex(80px) scaleX(0.3);
   }
 }
 @keyframes scrollDown {
-  from {
+  0% {
     opacity: 0;
-    transform: translatex(-20px) scaleX(0.1);
+    transform: translatex(-20px) scaleX(0.3);
   }
   50% {
-    opacity: 1;
+    opacity: 0.7;
   }
-  to {
+  100% {
     opacity: 0;
-    transform: translatex(50px) scaleX(1);
+    transform: translatex(80px) scaleX(0.3);
   }
 }
 
