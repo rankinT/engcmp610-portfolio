@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('/styles/anim.css');
 
 :root {
     --bg-main: #ffffff;
@@ -38,20 +38,6 @@
     color: var(--text-dark);
     //background-image: url(/imgs/icons/star-blue.png );
     
-  }
-  #index-body {
-    animation: forwards 1s ease 1 bodyFade;
-    //overflow-y: hidden;
-    @keyframes bodyFade {
-        from{
-            opacity: 0;
-            transform: translateX(-100);
-        }
-        to{
-            
-            transform: translateX(1000) ;
-        }
-    }
   }
 
   
@@ -122,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10%;    
+    margin-top: 10%; 
     background-color: var(--bg-grey);
     padding: 2em 0;
     text-align: center;
@@ -229,55 +215,63 @@
         width: 400px;
     }
 }
-#scroll-prompt{
-    position: fixed;
-    bottom: 10%;
-    left: 0;
-    rotate: 90deg;
-    p{
-        font-weight: bold;
-        margin: 1em;
-        display: block;
+// /////////////////////////////
+// //////// ABOUT ME PAGE ///////////
+
+section.about-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;    
+    //background-color: #dfffd3;
+    background-color: #d3f6ff;
+    // color: #0832bb;
+    padding: 2em 0;
+    text-align: center;
+    h1{
+        font-size: 28px;
     }
-    .show-scroll.end{
-        display: none;
-    }
-    .line{
-        background-color: black;
-        width: 50px;
-        height: 3px;
-        position: absolute;
-        animation: 3s linear infinite running scrollDown;
-    }
-    @keyframes scrollDown {
-        from {
-            opacity: 0;
-            transform: translatex(-50px) scaleX(0.1);
-        }
-        50%{
-            opacity: 1;
-        }
-        to{
-            opacity: 0;
-            transform: translatex(50px) scaleX(2); //multi right to left
-            
-        }
-    }
-}
-// reveal animations
-// https://alvarotrigo.com/blog/css-animations-scroll/
-.reveal{
-    position:relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-    z-index: 0; //bottom layer cheese
-}
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
   }
-///a
+  .about-container{
+    margin: 1em;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #0FFF8F;
+    background-color: #f5f7f8;
+  }
 
+  section.about-intro.edu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;    
+    //background-color: #dfffd3;
+    background-color: #d3ffee;
+    // color: #0832bb;
+    padding: 2em 0;
+  }
+  .about-container.edu{
+    table{
+        margin: 2em;
+    }
+  }
 
-  
+  section.about-intro.exp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;    
+    //background-color: #dfffd3;
+    background-color: #f2ffd3;
+    // color: #0832bb;
+    padding: 2em 0;
+}
+
+.about-container.exp{
+    table{
+        margin: 2em;
+    }
+}

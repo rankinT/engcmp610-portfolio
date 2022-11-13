@@ -19,13 +19,3 @@ function reveal(){
     }
 }
 window.addEventListener("scroll",reveal);
-
-window.addEventListener("scroll",() => {
-    let scrollP = document.getElementById('scroll-prompt')
-    let scrollEnd = scrollP.getBoundingClientRect().top;
-    if (scrollEnd < windowHeight - 100){
-        scrollP.classList.add('end')
-    } else{
-        scrollP.classList.remove('end')
-    }
-});

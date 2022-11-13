@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("/styles/anim.css");
 :root {
   --bg-main: #ffffff;
   --bg-grey: #f4f4f4;
@@ -31,29 +32,6 @@ body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-dark);
-}
-
-#index-body {
-  -webkit-animation: forwards 1s ease 1 bodyFade;
-          animation: forwards 1s ease 1 bodyFade;
-}
-@-webkit-keyframes bodyFade {
-  from {
-    opacity: 0;
-    transform: translateX(-100);
-  }
-  to {
-    transform: translateX(1000);
-  }
-}
-@keyframes bodyFade {
-  from {
-    opacity: 0;
-    transform: translateX(-100);
-  }
-  to {
-    transform: translateX(1000);
-  }
 }
 
 header {
@@ -199,64 +177,51 @@ section.portfolio-container .portfolio-item-container p {
   width: 400px;
 }
 
-#scroll-prompt {
-  position: fixed;
-  bottom: 10%;
-  left: 0;
-  rotate: 90deg;
+section.about-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background-color: #d3f6ff;
+  padding: 2em 0;
+  text-align: center;
 }
-#scroll-prompt p {
-  font-weight: bold;
+section.about-intro h1 {
+  font-size: 28px;
+}
+
+.about-container {
   margin: 1em;
-  display: block;
-}
-#scroll-prompt .show-scroll.end {
-  display: none;
-}
-#scroll-prompt .line {
-  background-color: black;
-  width: 50px;
-  height: 3px;
-  position: absolute;
-  -webkit-animation: 3s linear infinite running scrollDown;
-          animation: 3s linear infinite running scrollDown;
-}
-@-webkit-keyframes scrollDown {
-  from {
-    opacity: 0;
-    transform: translatex(-50px) scaleX(0.1);
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translatex(50px) scaleX(2);
-  }
-}
-@keyframes scrollDown {
-  from {
-    opacity: 0;
-    transform: translatex(-50px) scaleX(0.1);
-  }
-  50% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translatex(50px) scaleX(2);
-  }
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7f8;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-  z-index: 0;
+section.about-intro.edu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background-color: #d3ffee;
+  padding: 2em 0;
 }
 
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
+.about-container.edu table {
+  margin: 2em;
+}
+
+section.about-intro.exp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background-color: #f2ffd3;
+  padding: 2em 0;
+}
+
+.about-container.exp table {
+  margin: 2em;
 }/*# sourceMappingURL=styles.css.map */
