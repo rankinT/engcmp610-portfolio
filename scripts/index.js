@@ -1,12 +1,13 @@
 "use strict"
 
+// https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal(){
     var reveals = document.querySelectorAll(".reveal"); //gets all elms 
 
     for (let i =0; i< reveals.length;i++){
         let windowHeight = window.innerHeight; //viewport height
         let elementTop = reveals[i].getBoundingClientRect().top; //height from top element to VP
-        let elementVisible = 150; //distance to from elm to top... to reveal
+        let elementVisible = 10; //distance to from elm to top... to reveal
 
 
         //add 'attr' class active to revealed and hidden
