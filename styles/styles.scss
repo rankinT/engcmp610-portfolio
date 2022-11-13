@@ -40,7 +40,7 @@
     
   }
   #index-body{
-    overflow-y: hidden;
+    //overflow-y: hidden;
   }
   
   header{
@@ -52,6 +52,9 @@
     justify-content:right;
     align-items: center;
     margin: 0 0 1em 0;
+    background-color: rgba(#ffffff, $alpha: 0.7);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     //background-color: rgba($color: #fdc4c4, $alpha: 1.0);
 
    .top-color{
@@ -99,8 +102,6 @@
         }
     }
   }
-
-
 
 // ////////////////////////////////
 // ////////// INTRO PAGE /////////
@@ -173,6 +174,7 @@
   }
   .portfolio-intro.cs{
     background-color: #fff0d3;
+    margin-top: 1em;
   }
 
   section.portfolio-container{
