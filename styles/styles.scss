@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('/styles/anim.css');
 
 :root {
     --bg-main: #ffffff;
@@ -38,20 +38,6 @@
     color: var(--text-dark);
     //background-image: url(/imgs/icons/star-blue.png );
     
-  }
-  #index-body {
-    animation: forwards 1s ease 1 bodyFade;
-    //overflow-y: hidden;
-    @keyframes bodyFade {
-        from{
-            opacity: 0;
-            transform: translateX(-100);
-        }
-        to{
-            
-            transform: translateX(1000) ;
-        }
-    }
   }
 
   
@@ -229,55 +215,5 @@
         width: 400px;
     }
 }
-#scroll-prompt{
-    position: fixed;
-    bottom: 10%;
-    left: 0;
-    rotate: 90deg;
-    p{
-        font-weight: bold;
-        margin: 1em;
-        display: block;
-    }
-    .show-scroll.end{
-        display: none;
-    }
-    .line{
-        background-color: black;
-        width: 50px;
-        height: 3px;
-        position: absolute;
-        animation: 3s linear infinite running scrollDown;
-    }
-    @keyframes scrollDown {
-        from {
-            opacity: 0;
-            transform: translatex(-20px) scaleX(0.1);
-        }
-        50%{
-            opacity: 1;
-        }
-        to{
-            opacity: 0;
-            transform: translatex(50px) scaleX(1); //multi right to left
-            
-        }
-    }
-}
-// reveal animations
-// https://alvarotrigo.com/blog/css-animations-scroll/
-.reveal{
-    position:relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-    z-index: 0; //bottom layer cheese
-}
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
-///a
 
 
-  
