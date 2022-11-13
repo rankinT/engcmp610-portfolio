@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --bg-main: #ffffff;
+  --bg-grey: #f4f4f4;
   --bg-dark: #31363d;
   --bg-dark-alt: #21262c;
   --bg-light-blue: #9DD9D2;
@@ -25,7 +27,7 @@ body {
   overflow-x: auto;
   overflow-y: scroll;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-dark);
 }
@@ -34,6 +36,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  position: fixed;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -72,37 +75,56 @@ header ul li a :link, header ul li a :visited, header ul li a :hover, header ul 
   text-decoration: none;
 }
 
-section.me-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1em;
-}
-section.me-container h1 {
-  font-size: 36px;
-}
-section.me-container p {
-  text-align: center;
-  position: relative;
-}
-
-section.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 200px;
-}
-section.img-container img {
-  width: 300px;
-}
-
 section.intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10%;
+  background-color: var(--bg-grey);
+  padding: 2em 0;
+  text-align: center;
 }
-section.intro-container .intro-spacer {
-  width: 20%;
+section.intro-container .intro-welcome {
+  width: 600px;
+  margin: 1.2em;
+}
+section.intro-container .intro-welcome h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+section.intro-container .intro-welcome .spacer {
+  width: auto;
+  height: 4px;
+  margin: 1em;
+  background: linear-gradient(90deg, var(--bg-green) 0%, rgb(248, 255, 61) 55%, var(--bg-orange-dark) 100%);
+  box-shadow: var(--container-shadow);
+}
+section.intro-container .intro-welcome p {
+  font-weight: 500;
+  font-size: 20px;
+}
+section.intro-container .intro-me img {
+  width: 300px;
+  background-color: #cacaca;
+  padding: 1.2em;
+  margin: 1.2em;
+  border-radius: 20px;
+  box-shadow: var(--container-shadow);
+}
+
+section.dnid-intro {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+section.dnid-intro .intro-content {
+  text-align: center;
+  padding: 1em;
+}
+
+#index-body {
+  overflow-y: hidden;
 }
 
 section.portfolio-container {
