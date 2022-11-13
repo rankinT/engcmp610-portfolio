@@ -7,7 +7,7 @@ function reveal(){
     for (let i =0; i< reveals.length;i++){
         let windowHeight = window.innerHeight; //viewport height
         let elementTop = reveals[i].getBoundingClientRect().top; //height from top element to VP
-        let elementVisible = 100; //distance to from elm to top... to reveal
+        let elementVisible = 3; //distance to from elm to top... to reveal
 
 
         //add 'attr' class active to revealed and hidden
