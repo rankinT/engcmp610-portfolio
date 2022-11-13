@@ -2,12 +2,12 @@
 
 // https://alvarotrigo.com/blog/css-animations-scroll/
 function reveal(){
-    var reveals = document.querySelectorAll(".reveal"); //gets all elms 
+    let reveals = document.querySelectorAll(".reveal"); //gets all elms 
 
     for (let i =0; i< reveals.length;i++){
         let windowHeight = window.innerHeight; //viewport height
         let elementTop = reveals[i].getBoundingClientRect().top; //height from top element to VP
-        let elementVisible = 10; //distance to from elm to top... to reveal
+        let elementVisible = 100; //distance to from elm to top... to reveal
 
 
         //add 'attr' class active to revealed and hidden
@@ -18,5 +18,14 @@ function reveal(){
         }
     }
 }
-
 window.addEventListener("scroll",reveal);
+
+window.addEventListener("scroll",() => {
+    let scrollP = document.getElementById('scroll-prompt')
+    let scrollEnd = scrollP.getBoundingClientRect().top;
+    if (scrollEnd < windowHeight - 100){
+        scrollP.classList.add('end')
+    } else{
+        scrollP.classList.remove('end')
+    }
+});
