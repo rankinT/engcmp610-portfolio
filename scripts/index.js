@@ -4,7 +4,7 @@ function reveal(){
     var reveals = document.querySelectorAll(".reveal"); //gets all elms 
 
     for (let i =0; i< reveals.length;i++){
-        let wHeight = window.innerHeight; //viewport height
+        let windowHeight = window.innerHeight; //viewport height
         let elementTop = reveals[i].getBoundingClientRect().top; //height from top element to VP
         let elementVisible = 150; //distance to from elm to top... to reveal
 
