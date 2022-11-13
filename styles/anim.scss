@@ -1,5 +1,5 @@
 // INDEX BODY FADE IN w/ lil slide
-.intro-container.index, .portfolio-intro, .about-intro {
+.intro-container.index, .portfolio-intro, .about-intro, .about-container {
     animation: forwards 1s ease 1 bodyFade;
     //overflow-y: hidden;
     @keyframes bodyFade {

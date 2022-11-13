@@ -1,4 +1,4 @@
-.intro-container.index, .portfolio-intro, .about-intro {
+.intro-container.index, .portfolio-intro, .about-intro, .about-container {
   -webkit-animation: forwards 1s ease 1 bodyFade;
           animation: forwards 1s ease 1 bodyFade;
 }
