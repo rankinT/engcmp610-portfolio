@@ -1,5 +1,5 @@
 :root {
-  --bg-main: #ffffff;
+  --bg-main: #fffaf1;
   --bg-dark: #31363d;
   --bg-dark-alt: #21262c;
   --bg-light-blue: #9DD9D2;
@@ -37,11 +37,11 @@ header {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin: 0 0 3rem 0;
+  margin: 0 0 1em 0;
 }
 header .top-color {
   width: 100%;
-  height: 3px;
+  height: 5px;
   position: fixed;
   margin: 0;
   top: 0;
@@ -51,17 +51,14 @@ header .top-color {
 }
 header #active-page {
   border-bottom-style: solid;
-  border-color: #be7c02;
-  background-color: rgba(255, 179, 15, 0.35);
-  padding: 0.6em;
-  border-radius: 10px;
+  border-color: #dd9103;
+  padding: 0.6em 0;
 }
 header ul {
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
 }
 header ul li {
   list-style: none;
@@ -75,19 +72,37 @@ header ul li a :link, header ul li a :visited, header ul li a :hover, header ul 
   text-decoration: none;
 }
 
+section.me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+section.me-container h1 {
+  font-size: 36px;
+}
+section.me-container p {
+  text-align: center;
+  position: relative;
+}
+
+section.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+section.img-container img {
+  width: 300px;
+}
+
 section.intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section.intro-container .img-content {
-  justify-content: center;
-  align-items: center;
-  padding: 1.3em;
-}
-section.intro-container .img-content img {
-  width: 300px;
-  padding: 1em;
+section.intro-container .intro-spacer {
+  width: 20%;
 }
 
 section.portfolio-container {
