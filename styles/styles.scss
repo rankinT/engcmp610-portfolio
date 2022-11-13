@@ -67,6 +67,7 @@
     background-color: rgba(#ffffff, $alpha: 0.7);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    z-index: 2;
     //background-color: rgba($color: #fdc4c4, $alpha: 1.0);
 
    .top-color{
@@ -270,7 +271,7 @@
     transform: translateY(150px);
     opacity: 0;
     transition: 1s all ease;
-    z-index: -100; //bottom layer cheese
+    z-index: 0; //bottom layer cheese
 }
 .reveal.active{
     transform: translateY(0);
