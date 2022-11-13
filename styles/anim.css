@@ -1,0 +1,84 @@
+#index-body {
+  -webkit-animation: forwards 1s ease 1 bodyFade;
+          animation: forwards 1s ease 1 bodyFade;
+}
+@-webkit-keyframes bodyFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(1000);
+  }
+}
+@keyframes bodyFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(1000);
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+  z-index: 0;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#scroll-prompt {
+  position: fixed;
+  bottom: 10%;
+  left: 0;
+  rotate: 90deg;
+}
+#scroll-prompt p {
+  font-weight: bold;
+  margin: 1em;
+  display: block;
+}
+#scroll-prompt .show-scroll.end {
+  display: none;
+}
+#scroll-prompt .line {
+  background-color: black;
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  -webkit-animation: 3s linear infinite running scrollDown;
+          animation: 3s linear infinite running scrollDown;
+}
+@-webkit-keyframes scrollDown {
+  from {
+    opacity: 0;
+    transform: translatex(-20px) scaleX(0.1);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translatex(50px) scaleX(1);
+  }
+}
+@keyframes scrollDown {
+  from {
+    opacity: 0;
+    transform: translatex(-20px) scaleX(0.1);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translatex(50px) scaleX(1);
+  }
+}/*# sourceMappingURL=anim.css.map */
