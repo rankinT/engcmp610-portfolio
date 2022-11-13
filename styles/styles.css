@@ -33,6 +33,29 @@ body {
   color: var(--text-dark);
 }
 
+#index-body {
+  -webkit-animation: forwards 1s ease 1 bodyFade;
+          animation: forwards 1s ease 1 bodyFade;
+}
+@-webkit-keyframes bodyFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(1000);
+  }
+}
+@keyframes bodyFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100);
+  }
+  to {
+    transform: translateX(1000);
+  }
+}
+
 header {
   width: 100%;
   top: 0;

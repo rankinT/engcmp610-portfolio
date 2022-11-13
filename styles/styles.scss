@@ -39,9 +39,21 @@
     //background-image: url(/imgs/icons/star-blue.png );
     
   }
-  #index-body{
+  #index-body {
+    animation: forwards 1s ease 1 bodyFade;
     //overflow-y: hidden;
+    @keyframes bodyFade {
+        from{
+            opacity: 0;
+            transform: translateX(-100);
+        }
+        to{
+            
+            transform: translateX(1000) ;
+        }
+    }
   }
+
   
   header{
     width: 100%;
@@ -172,6 +184,8 @@
     padding: 2em 0;
     text-align: center;
   }
+
+
   .portfolio-intro.cs{
     background-color: #fff0d3;
     margin-top: 1em;
