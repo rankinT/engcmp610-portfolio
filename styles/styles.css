@@ -2,6 +2,7 @@
 :root {
   --bg-main: #ffffff;
   --bg-grey: #f4f4f4;
+  --bg-grey-dark: #eeeeee;
   --bg-dark: #31363d;
   --bg-dark-alt: #21262c;
   --bg-light-blue: #9DD9D2;
@@ -30,6 +31,10 @@ body {
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-dark);
+}
+
+#index-body {
+  overflow-y: hidden;
 }
 
 header {
@@ -123,17 +128,38 @@ section.dnid-intro .intro-content {
   padding: 1em;
 }
 
-#index-body {
-  overflow-y: hidden;
+section.portfolio-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  background-color: #fff0d3;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.portfolio-intro.cs {
+  background-color: #fff0d3;
 }
 
 section.portfolio-container {
   margin: 1em;
   padding: 1em;
   display: flex;
+  float: left;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+section.portfolio-container .portfolio-item-container {
+  background-color: #ececec;
+  padding: 1.2em;
+  margin: 1.2em;
+  border-radius: 20px;
+  box-shadow: var(--container-shadow);
+}
+section.portfolio-container .portfolio-item-container img {
+  width: 500px;
 }
 section.portfolio-container .soundscape-container, section.portfolio-container .varg-container, section.portfolio-container .twine-container, section.portfolio-container .portfolio-container {
   margin: 2em;
