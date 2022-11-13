@@ -1,14 +1,15 @@
-#index-body {
+// INDEX BODY FADE IN w/ lil slide
+.intro-container.index, .portfolio-intro {
     animation: forwards 1s ease 1 bodyFade;
     //overflow-y: hidden;
     @keyframes bodyFade {
         from{
             opacity: 0;
-            transform: translateX(-100);
+            transform: translateX(-10px);
         }
         to{
-            
-            transform: translateX(1000) ;
+            opacity: 1;
+            transform: translateX(0px) ;
         }
     }
   }
@@ -27,7 +28,23 @@
     opacity: 1;
   }
 
+  .portfolio-item-container.varg, .portfolio-item-container.soundscape{
+    animation: forwards 1s ease 1 portItemFade;
+    @keyframes portItemFade {
+        from{
+            opacity: 0;
+            transform: translateY(150px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0px) ;
+        }
+    }
+  }
+
+// SCROLL PROMPT ON PORTF
 #scroll-prompt{
+    z-index: 1;
     position: fixed;
     bottom: 10%;
     left: 0;
@@ -37,7 +54,7 @@
         margin: 1em;
         display: block;
     }
-    .show-scroll.end{
+    .scroll-prompt.end{
         display: none;
     }
     .line{
@@ -58,6 +75,22 @@
         to{
             opacity: 0;
             transform: translatex(50px) scaleX(1); //multi right to left
+            
+        }
+    }
+}
+
+// LINE SPACER FADE EXPAND
+#index-spacer{
+    animation: forwards 0.6s linear spacerIn;
+    @keyframes spacerIn {
+        from {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        to{
+            opacity: 1;
+            transform: scaleX(1); //multi right to left
             
         }
     }

@@ -1,23 +1,25 @@
-#index-body {
+.intro-container.index, .portfolio-intro {
   -webkit-animation: forwards 1s ease 1 bodyFade;
           animation: forwards 1s ease 1 bodyFade;
 }
 @-webkit-keyframes bodyFade {
   from {
     opacity: 0;
-    transform: translateX(-100);
+    transform: translateX(-10px);
   }
   to {
-    transform: translateX(1000);
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 @keyframes bodyFade {
   from {
     opacity: 0;
-    transform: translateX(-100);
+    transform: translateX(-10px);
   }
   to {
-    transform: translateX(1000);
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
@@ -34,7 +36,33 @@
   opacity: 1;
 }
 
+.portfolio-item-container.varg, .portfolio-item-container.soundscape {
+  -webkit-animation: forwards 1s ease 1 portItemFade;
+          animation: forwards 1s ease 1 portItemFade;
+}
+@-webkit-keyframes portItemFade {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes portItemFade {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 #scroll-prompt {
+  z-index: 1;
   position: fixed;
   bottom: 10%;
   left: 0;
@@ -45,7 +73,7 @@
   margin: 1em;
   display: block;
 }
-#scroll-prompt .show-scroll.end {
+#scroll-prompt .scroll-prompt.end {
   display: none;
 }
 #scroll-prompt .line {
@@ -80,5 +108,30 @@
   to {
     opacity: 0;
     transform: translatex(50px) scaleX(1);
+  }
+}
+
+#index-spacer {
+  -webkit-animation: forwards 0.6s linear spacerIn;
+          animation: forwards 0.6s linear spacerIn;
+}
+@-webkit-keyframes spacerIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+@keyframes spacerIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
   }
 }/*# sourceMappingURL=anim.css.map */
