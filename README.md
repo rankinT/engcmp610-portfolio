@@ -58,8 +58,8 @@ I really liked the loosey goosey version, but it did not fit my intended theme o
 
 <img src="./imgs/webs/web3.png" height="400">
 
-<img src="./imgs/gifs/infade.gif" height='300'>
-<img src="./imgs/gifs/portf.gif" height='300'>
+<img src="./imgs/gifs/infade.gif" width='600'>
+<img src="./imgs/gifs/portf.gif" width='600'>
 
 ------------
 
