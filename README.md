@@ -36,7 +36,7 @@ Once I had some ideas of what I wanted to include in my website, it was time to 
 Despite trying to balance out the view with an image, it still didn't feel right. I toned everything down to a more minimal look so I could have more control over the balance of the page, using the content that I would add later.
 
 <img src="./imgs/sketches/pal1.png" width="300">
-<img src="./imgs/sketches/pal2.png" width="300">
+<img src="./imgs/sketches/pal2.png" width="600">
 
 -----------------------
 
